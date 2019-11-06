@@ -8,14 +8,14 @@ package(
 
 genrule(
     name = "snappy_stubs_public_h",
-    srcs = ["@com_github_cschuet_snappy//bazel/third_party/snappy:snappy-stubs-public.h"],
+    srcs = ["@com_github_mgaurav_snappy//bazel/third_party/snappy:snappy-stubs-public.h"],
     outs = ["snappy-stubs-public.h"],
     cmd = "cp $< $@",
 )
 
 genrule(
     name = "config_h",
-    srcs = ["@com_github_cschuet_snappy//bazel/third_party/snappy:config.h"],
+    srcs = ["@com_github_mgaurav_snappy//bazel/third_party/snappy:config.h"],
     outs = ["config.h"],
     cmd = "cp $< $@",
 )
